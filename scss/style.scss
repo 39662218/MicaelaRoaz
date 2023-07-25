@@ -1,1 +1,295 @@
-$color-primario: rgb(255, 228, 119)
+$body { 
+    background-color: rgb(96, 182, 108);
+  }
+  
+  header
+  
+  
+  h1 {
+      color: rgb(3, 39, 2);
+  }
+  section {
+    color: rgb(29, 78, 28);
+  }
+  
+  section.article {
+  
+    color: #caf0ba;
+  }
+  
+  
+  p.indent {text-indent: 70px;}
+  
+  h2 { 
+  
+      color: rgb(2, 3, 1);
+  }
+  
+  h1 {
+      color: rgb(0, 0, 0);
+  }
+  
+  
+  
+  h2 { 
+  
+      color: rgb(2, 15, 7);
+  }
+  
+  button{
+    height: auto; 
+    padding-left: 5px;
+    padding-right: 5px;   
+    margin-bottom: 20px; 
+    margin-top: 10px;   
+    text-transform: uppercase;
+    background-color: #8eca7c ; 
+    border-color: #83ff6b; 
+    border-style: solid; 
+    border-radius: 10px;  
+    width: 420px;   
+    cursor: pointer;
+  }
+  
+  
+    h2 
+           {
+            font-family: 'Aboreto';
+            font-style: normal;
+            font-weight: 400;
+           
+      }
+  
+  P {
+     color: rgb(0, 0, 0);
+  }
+  
+  button {
+    color: #081f0e;
+  }
+  
+  
+  p {
+  
+      font-family: 'Advent Pro';
+    font-style: italic;
+    font-weight: 100;
+    
+  }
+  
+  select {
+      color: rgb(76, 156, 76);
+  }
+  
+  select { 
+  
+      font-family: 'monaco,georgia';
+    font-style: normal;
+    
+  }
+  
+  div {
+    color: #042008;
+  }
+  
+  
+  
+  body {
+    background-color: #366b3a;
+  }
+  
+  
+  
+  section {
+    padding: auto;
+    margin-left: auto;
+    }
+    
+    section article {
+    background-color: #d3ffd3; ;
+    width: auto;
+    height: auto;
+    }
+    
+    section article p {
+    line-height: 4;
+    }
+  
+  p strong {
+    color: #307021;
+  }
+  
+  
+  
+  .padre-flex {
+  
+    display: flex;
+    flex-direction: block;
+    justify-content: flex-end;
+    height: 300px;
+  }
+  
+  section { 
+    display: flex
+    
+  }
+  
+  
+  
+  
+  .miestilo {
+  
+    background-color: rgb(53, 136, 64);
+  }
+  @media (max-widht: 480px ) {
+  
+    .miestilo {
+        background-color: rgb(205, 255, 205);
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    body {
+      background-color: #dcffd0;
+    }
+    
+  }
+  
+  
+  
+  .element {
+    width: 50%;
+    background-color: rgb(143, 255, 50);
+  }
+  
+  @media (max-width: 800px) {
+    .element{
+        width: 100%;
+        background-color: rgb(180, 255, 146);
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
+  
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+  
+  @media only screen and (max-width: 768px) {
+   
+    [class*="col-"] {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+  [class*="col-"] {
+    width: 100%;
+  }
+  
+  
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
+  
+  @media screen and (max-width: 480px) {
+    
+  }
+  
+  
+  @media screen and (min-width: 481px) {
+    
+  }
+  
+    
+  img {
+    max-width: 100%;
+  }
+  
+  body {
+    font-family: "Circular", Arial, sans-serif;
+    color: rgb(156, 252, 119);
+    box-sizing: border-box;
+   }
+    
+  
+   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+  
+   
+   body {
+     font-family: 'Poppins', sans-serif;
+   }
+   
+   h1, h2, h3 {
+     font-family: 'Poppins', sans-serif;
+     font-weight: 700;
+   }
+   
+   p {
+     font-family: 'Poppins', sans-serif;
+     font-weight: 400;
+   }
+  
+   .navbar {
+    background-color: #a2ff9f; /* Reemplaza el color con el que deseas cambiar la barra de navegación */
+  }
+  
+  /* Cambiar el color del texto de la barra de navegación */
+  .navbar .navbar-nav .nav-link {
+    color: #000000; 
+  }
+  
+  /* Cambiar el color del texto del enlace activo */
+  .navbar .navbar-nav .nav-link.active {
+    color: #070202; /* Reemplaza el color con el que deseas cambiar el texto del enlace activo */
+  }
+  
+  /* Otros estilos específicos de tu barra de navegación */
+  /* ... */
+  
+  .navbar {
+    font-family: "Circular", Arial, sans-serif; /* Reemplaza "Poppins" con la tipografía que deseas utilizar */
+  }
+  
+  /* Cambiar la tipografía del texto del navbar */
+  .navbar-nav .nav-link {
+    font-family:"Circular", Arial, sans-serif; /* Reemplaza "Poppins" con la tipografía que deseas utilizar */
+  }
+  
+  /* Cambiar la tipografía del texto del enlace activo */
+  .navbar-nav .nav-link.active {
+    font-family: "Circular", Arial, sans-serif; /* Reemplaza "Poppins" con la tipografía que deseas utilizar */
+  }
+  
+  /* Otros estilos específicos de tu navbar */
+  /* ... */
+  
+  img {
+    filter: brightness(100%); /* Ajusta el valor según sea necesario */
+    /* O */
+    filter: contrast(100%); /* Ajusta el valor según sea necesario */
+  }
