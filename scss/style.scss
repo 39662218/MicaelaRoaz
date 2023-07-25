@@ -1,3 +1,4 @@
+
 $main-green: rgb(96, 182, 108);
 $dark-green: rgb(3, 39, 2);
 $article-green: #caf0ba;
@@ -9,8 +10,24 @@ $lighter-green: rgb(53, 136, 64);
 $lightest-green: rgb(205, 255, 205);
 $light-blue: lightblue;
 $main-green-2: #366b3a;
+$navbar-color: #71c56e;
 
 
+$navbar-color: #a2ff9f;
+$navbar-font: "Arial, sans-serif"; // Change the font here
+
+.navbar {
+  background-color: $navbar-color;
+  font-family: $navbar-font; 
+
+  .navbar-nav .nav-link {
+    color: #000000;
+
+    &.active {
+      color: #070202;
+    }
+  }
+}
 
 body {
   background-color: $main-green;
@@ -82,7 +99,7 @@ body {
     }
   }
 
-  // Button Styles
+
   button {
     height: auto;
     padding-left: 5px;
@@ -98,34 +115,34 @@ body {
     cursor: pointer;
   }
 
-  // Select Styles
+  
   select {
     color: $light-green;
     font-family: 'monaco,georgia';
     font-style: normal;
   }
 
-  // Other Element Styles
+
   div {
     color: #042008;
   }
 }
 
-// Media Queries for .miestilo class
+
 @media (max-width: 480px) {
   .miestilo {
     background-color: $lightest-green;
   }
 }
 
-// Media Query for body background color
+
 @media screen and (min-width: 768px) {
   body {
     background-color: #dcffd0;
   }
 }
 
-// Media Queries for .element class
+
 @media (max-width: 800px) {
   .element {
     width: 100%;
@@ -133,21 +150,21 @@ body {
   }
 }
 
-// Media Query for body background color
+
 @media only screen and (max-width: 600px) {
   body {
     background-color: lightblue;
   }
 }
 
-// Grid classes
+
 @for $i from 1 through 12 {
   .col-#{$i} {
     width: percentage($i / 12);
   }
 }
 
-// Media Query for grid classes
+
 @media only screen and (max-width: 768px) {
   [class*="col-"] {
     width: 100%;
@@ -155,27 +172,15 @@ body {
   }
 }
 
-// Image Styles
+
 img {
   max-width: 100%;
   filter: brightness(100%);
 }
 
-// Navbar Styles
-.navbar {
-  background-color: #b5f3b2;
-  font-family: "Circular", Arial, sans-serif;
 
-  .navbar-nav .nav-link {
-    color: #000000;
 
-    &.active {
-      color: #070202;
-    }
-  }
-}
 
-// Font Family Styles
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 body {
