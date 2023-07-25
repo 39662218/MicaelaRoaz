@@ -16,11 +16,7 @@ section.article {
 
   color: #caf0ba;
 }
-h1 { 
-    font-family: 'Aclonica';
-    font-style: normal;
-    
-}
+
 
 p.indent {text-indent: 70px;}
 
@@ -33,11 +29,7 @@ h1 {
     color: rgb(0, 0, 0);
 }
 
-h1 { 
-    font-family: 'Aclonica';
-    font-style: normal;
-    
-}
+
 
 h2 { 
 
@@ -51,7 +43,7 @@ button{
   margin-bottom: 20px; 
   margin-top: 10px;   
   text-transform: uppercase;
-  background-color: #7cff54; 
+  background-color: #8eca7c ; 
   border-color: #83ff6b; 
   border-style: solid; 
   border-radius: 10px;  
@@ -69,7 +61,7 @@ button{
     }
 
 P {
-   color: rgb(0, 3, 1);
+   color: rgb(0, 0, 0);
 }
 
 button {
@@ -114,7 +106,7 @@ section {
   }
   
   section article {
-  background-color: #b0ffb0;
+  background-color: #d3ffd3; ;
   width: auto;
   height: auto;
   }
@@ -163,10 +155,7 @@ section {
   
 }
 
-body {
-  font-family:Monaco,Georgia,Times,serif;
 
-}
 
 .element {
   width: 50%;
@@ -200,7 +189,7 @@ body {
 .col-12 {width: 100%;}
 
 @media only screen and (max-width: 768px) {
-  /* For mobile phones: */
+ 
   [class*="col-"] {
     width: 100%;
     justify-content: center;
@@ -227,3 +216,80 @@ body {
   .col-12 {width: 100%;}
 }
 
+@media screen and (max-width: 480px) {
+  
+}
+
+
+@media screen and (min-width: 481px) {
+  
+}
+
+  
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: "Circular", Arial, sans-serif;
+  color: rgb(156, 252, 119);
+  box-sizing: border-box;
+ }
+  
+
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+ 
+ body {
+   font-family: 'Poppins', sans-serif;
+ }
+ 
+ h1, h2, h3 {
+   font-family: 'Poppins', sans-serif;
+   font-weight: 700;
+ }
+ 
+ p {
+   font-family: 'Poppins', sans-serif;
+   font-weight: 400;
+ }
+
+ .navbar {
+  background-color: #a2ff9f; /* Reemplaza el color con el que deseas cambiar la barra de navegación */
+}
+
+/* Cambiar el color del texto de la barra de navegación */
+.navbar .navbar-nav .nav-link {
+  color: #000000; 
+}
+
+/* Cambiar el color del texto del enlace activo */
+.navbar .navbar-nav .nav-link.active {
+  color: #070202; /* Reemplaza el color con el que deseas cambiar el texto del enlace activo */
+}
+
+/* Otros estilos específicos de tu barra de navegación */
+/* ... */
+
+.navbar {
+  font-family: "Circular", Arial, sans-serif; /* Reemplaza "Poppins" con la tipografía que deseas utilizar */
+}
+
+/* Cambiar la tipografía del texto del navbar */
+.navbar-nav .nav-link {
+  font-family:"Circular", Arial, sans-serif; /* Reemplaza "Poppins" con la tipografía que deseas utilizar */
+}
+
+/* Cambiar la tipografía del texto del enlace activo */
+.navbar-nav .nav-link.active {
+  font-family: "Circular", Arial, sans-serif; /* Reemplaza "Poppins" con la tipografía que deseas utilizar */
+}
+
+/* Otros estilos específicos de tu navbar */
+/* ... */
+
+img {
+  filter: brightness(100%); /* Ajusta el valor según sea necesario */
+  /* O */
+  filter: contrast(100%); /* Ajusta el valor según sea necesario */
+}
