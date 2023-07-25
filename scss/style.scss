@@ -1,3 +1,192 @@
-h1 {
-    color: greenyellow;
+$main-green: rgb(96, 182, 108);
+$dark-green: rgb(3, 39, 2);
+$article-green: #caf0ba;
+$black: rgb(0, 0, 0);
+$dark-green-2: rgb(2, 15, 7);
+$light-green: #8eca7c;
+$light-green-border: #83ff6b;
+$lighter-green: rgb(53, 136, 64);
+$lightest-green: rgb(205, 255, 205);
+$light-blue: lightblue;
+$main-green-2: #366b3a;
+
+// Global Styles
+body {
+  background-color: $main-green;
+  font-family: "Circular", Arial, sans-serif;
+  color: rgb(156, 252, 119);
+  box-sizing: border-box;
+
+  // Header Styles
+  header {
+    h1 {
+      color: $dark-green;
+      font-family: 'Aboreto';
+      font-style: normal;
+      font-weight: 400;
+    }
+  }
+
+  // Section Styles
+  section {
+    color: $dark-green;
+
+    &.article {
+      color: $article-green;
+    }
+
+    &.miestilo {
+      background-color: $lighter-green;
+
+      @media (max-width: 480px) {
+        background-color: $lightest-green;
+      }
+    }
+
+    article {
+      background-color: $lighter-green;
+      width: auto;
+      height: auto;
+
+      p {
+        line-height: 4;
+      }
+    }
+  }
+
+  // Paragraph Styles
+  p.indent {
+    text-indent: 70px;
+  }
+
+  p {
+    color: $black;
+    font-family: 'Advent Pro';
+    font-style: italic;
+    font-weight: 100;
+
+    strong {
+      color: $dark-green-2;
+    }
+  }
+
+  // Heading Styles
+  h2 {
+    color: $dark-green;
+
+    & {
+      font-family: 'Aboreto';
+      font-style: normal;
+      font-weight: 400;
+    }
+  }
+
+  // Button Styles
+  button {
+    height: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    background-color: $light-green;
+    border-color: $light-green-border;
+    border-style: solid;
+    border-radius: 10px;
+    width: 420px;
+    cursor: pointer;
+  }
+
+  // Select Styles
+  select {
+    color: $light-green;
+    font-family: 'monaco,georgia';
+    font-style: normal;
+  }
+
+  // Other Element Styles
+  div {
+    color: #042008;
+  }
+}
+
+// Media Queries for .miestilo class
+@media (max-width: 480px) {
+  .miestilo {
+    background-color: $lightest-green;
+  }
+}
+
+// Media Query for body background color
+@media screen and (min-width: 768px) {
+  body {
+    background-color: #dcffd0;
+  }
+}
+
+// Media Queries for .element class
+@media (max-width: 800px) {
+  .element {
+    width: 100%;
+    background-color: rgb(180, 255, 146);
+  }
+}
+
+// Media Query for body background color
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+// Grid classes
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    width: percentage($i / 12);
+  }
+}
+
+// Media Query for grid classes
+@media only screen and (max-width: 768px) {
+  [class*="col-"] {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+// Image Styles
+img {
+  max-width: 100%;
+  filter: brightness(100%);
+}
+
+// Navbar Styles
+.navbar {
+  background-color: #a2ff9f;
+  font-family: "Circular", Arial, sans-serif;
+
+  .navbar-nav .nav-link {
+    color: #000000;
+
+    &.active {
+      color: #070202;
+    }
+  }
+}
+
+// Font Family Styles
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
 }
