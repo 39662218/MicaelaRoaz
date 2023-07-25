@@ -1,4 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+.navbar {
+  background-color: #a2ff9f;
+  font-family: "Aboreto";
+}
+.navbar .navbar-nav .nav-link {
+  color: #000000;
+}
+.navbar .navbar-nav .nav-link.active {
+  color: #070202;
+}
+
 body {
   background-color: rgb(96, 182, 108);
   font-family: "Circular", Arial, sans-serif;
@@ -154,17 +165,6 @@ body div {
 img {
   max-width: 100%;
   filter: brightness(100%);
-}
-
-.navbar {
-  background-color: #a2ff9f;
-  font-family: "Circular", Arial, sans-serif;
-}
-.navbar .navbar-nav .nav-link {
-  color: #000000;
-}
-.navbar .navbar-nav .nav-link.active {
-  color: #070202;
 }
 
 body {
