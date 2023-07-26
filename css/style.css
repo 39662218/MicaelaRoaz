@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 .navbar {
   background-color: #a2ff9f;
@@ -179,6 +180,88 @@ h1, h2, h3 {
 p {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
+}
+
+.contenedor {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.centrado {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.video-button {
+  display: inline-block;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.video-button video {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+.video-button:hover {
+  background-color: #ddd;
+}
+.video-button .contenedor {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+.video-button .centrado {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.video-button .container {
+  display: flex; /* Para colocar los <li> en línea */
+  justify-content: space-between; /* Para separarlos con espacio entre ellos */
+}
+.video-button .video-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.video-button .video-list li {
+  display: inline-block; /* Para colocar los <li> en línea */
+  vertical-align: top; /* Alinear en la parte superior */
+  width: 48%; /* O ajusta el ancho deseado para cada video */
+  margin-bottom: 20px; /* Espacio entre cada video */
+}
+.video-button .video-list li .video-wrapper {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 177.7778%;
+  padding-bottom: 0;
+  box-shadow: 0 2px 8px 0 rgba(63, 69, 81, 0.16);
+  overflow: hidden;
+  border-radius: 8px;
+  will-change: transform;
+}
+.video-button .video-list li .video-wrapper iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+.video-button .video-list li a {
+  display: block;
+  margin-top: 1em;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */
