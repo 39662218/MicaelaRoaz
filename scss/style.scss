@@ -1,10 +1,11 @@
 
 @import 'colores';
 @import 'listas';
+@import 'each';
 
 
 
-$navbar-font: "Aboreto"; // Change the font here
+$navbar-font: "Aboreto"; // Cambio de fuentes
 
 .navbar {
   background-color: $navbar-color;
