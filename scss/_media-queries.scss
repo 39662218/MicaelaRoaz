@@ -1,0 +1,36 @@
+// Media queries
+///phone
+@media (max-width: 480px) {
+    .miestilo {
+      background-color: $lightest-green;
+    }
+  }
+  ///compu
+  @media screen and (min-width: 768px) {
+    body {
+      background-color: #dcffd0;
+    }
+  }
+  ///mobil pantalla pequenas
+  @media (max-width: 800px) {
+    .element {
+      width: 100%;
+      background-color: rgb(180, 255, 146);
+    }
+  }
+  ///posicion vertical
+  @media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
+  
+  
+  
+  // Media query para ajustar estilos de columnas en mobile
+  @media only screen and (max-width: 768px) {
+    [class*="col-"] {
+      width: 100%;
+      justify-content: center;
+    }
+  }
