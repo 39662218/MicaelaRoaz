@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 @media (max-width: 480px) {
   .miestilo {
@@ -190,6 +191,48 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+header {
+  /* Estilos del botón y texto expandido */
+}
+header .expand-button {
+  background-color: #97db60;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+}
+header .expand-button .button-text {
+  position: relative;
+  z-index: 2;
+}
+header .expand-button .expanded-text {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 1;
+}
+header .expand-button:hover {
+  background-color: #7cd236;
+}
+header .expand-button:hover .expanded-text {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
 
 /*# sourceMappingURL=style.css.map */
