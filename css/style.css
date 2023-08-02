@@ -1,5 +1,6 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
-@media (max-width: 480px) {
+@media (max-width: 470px) {
   .miestilo {
     background-color: rgb(205, 255, 205);
   }
@@ -26,6 +27,114 @@
     justify-content: center;
   }
 }
+.expand-button {
+  padding: 10px;
+  background-color: #83ff72;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+}
+
+/* Estilos para el contenido expandido */
+.expanded-content {
+  display: none;
+  background-color: #8eca7c;
+  color: rgb(3, 39, 2);
+  padding: 10px;
+  border-radius: 5px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  transition: opacity 0.3s ease; /* Agregar transición de opacidad */
+}
+
+.expanded {
+  display: table-row;
+  opacity: 1; /* Mostrar contenido */
+}
+
+.expanded-content {
+  /* ... Tus otros estilos ... */
+  display: none;
+}
+
+.expanded {
+  display: block;
+  opacity: 1;
+}
+
+.expand-container {
+  margin-bottom: 20px; /* Ajusta el espacio entre los contenedores */
+}
+
+.col-1 {
+  width: 8.3333333333%;
+}
+
+.col-2 {
+  width: 16.6666666667%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.3333333333%;
+}
+
+.col-5 {
+  width: 41.6666666667%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.3333333333%;
+}
+
+.col-8 {
+  width: 66.6666666667%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.3333333333%;
+}
+
+.col-11 {
+  width: 91.6666666667%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.gallery img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+}
+
 .navbar {
   background-color: #a2ff9f;
   font-family: "Aboreto";
@@ -109,55 +218,7 @@ body select {
   font-style: normal;
 }
 body div {
-  color: #042008;
-}
-
-.col-1 {
-  width: 8.3333333333%;
-}
-
-.col-2 {
-  width: 16.6666666667%;
-}
-
-.col-3 {
-  width: 25%;
-}
-
-.col-4 {
-  width: 33.3333333333%;
-}
-
-.col-5 {
-  width: 41.6666666667%;
-}
-
-.col-6 {
-  width: 50%;
-}
-
-.col-7 {
-  width: 58.3333333333%;
-}
-
-.col-8 {
-  width: 66.6666666667%;
-}
-
-.col-9 {
-  width: 75%;
-}
-
-.col-10 {
-  width: 83.3333333333%;
-}
-
-.col-11 {
-  width: 91.6666666667%;
-}
-
-.col-12 {
-  width: 100%;
+  color: #62c971;
 }
 
 img {

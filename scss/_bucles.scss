@@ -1,0 +1,7 @@
+// Bucle for para generar estilos de columnas
+@for $i from 1 through 12 {
+    .col-#{$i} {
+      width: percentage($i / 12);
+    }
+  }
+  
