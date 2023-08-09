@@ -1,38 +1,29 @@
-// Media queries
-///phone
+/* Estilos para dispositivos pequeños (por ejemplo, teléfonos) */
 @media (max-width: 470px) {
-    .miestilo {
-      background-color: $lightest-green;
-    }
+  .miestilo {
+    background-color: $lightest-green; /* Asegúrate de definir $lightest-green */
   }
-  ///compu
-  @media screen and (min-width: 768px) {
-    body {
-      background-color: #dcffd0;
-    }
+  body {
+    background-color: lightblue; /* Agregamos un fondo de cuerpo para dispositivos pequeños */
   }
-  ///mobil pantalla pequenas
-  @media (max-width: 800px) {
-    .element {
-      width: 100%;
-      background-color: rgb(180, 255, 146);
-    }
-  }
-  ///posicion vertical
-  @media only screen and (max-width: 600px) {
-    body {
-      background-color: lightblue;
-    }
-  }
-  
-  
-  
-  // Media query para ajustar estilos de columnas en mobile
-  @media only screen and (max-width: 768px) {
-    [class*="col-"] {
-      width: 100%;
-      justify-content: center;
-    }
-  }
+}
 
-  
+/* Estilos para tabletas y pantallas de computadoras portátiles */
+@media (min-width: 471px) and (max-width: 1024px) {
+  .element {
+      width: 100%; /* Ancho completo para elementos en tamaños intermedios */
+      background-color: rgb(180, 255, 146);
+  }
+}
+
+/* Estilos para pantallas más grandes, como computadoras de escritorio */
+@media (min-width: 1025px) {
+  body {
+      background-color: #dcffd0;
+  }
+  /* Estilos para columnas en pantallas grandes */
+  [class*="col-"] {
+      width: auto; /* Restauramos el ancho automático para columnas en pantallas grandes */
+      justify-content: flex-start; /* Ajustamos la alineación horizontal */
+  }
+}

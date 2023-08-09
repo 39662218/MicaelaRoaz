@@ -1,30 +1,30 @@
 @charset "UTF-8";
+/* Estilos para dispositivos pequeños (por ejemplo, teléfonos) */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 @media (max-width: 470px) {
   .miestilo {
-    background-color: rgb(205, 255, 205);
+    background-color: rgb(205, 255, 205); /* Asegúrate de definir $lightest-green */
   }
-}
-@media screen and (min-width: 768px) {
   body {
-    background-color: #dcffd0;
+    background-color: lightblue; /* Agregamos un fondo de cuerpo para dispositivos pequeños */
   }
 }
-@media (max-width: 800px) {
+/* Estilos para tabletas y pantallas de computadoras portátiles */
+@media (min-width: 471px) and (max-width: 1024px) {
   .element {
-    width: 100%;
+    width: 100%; /* Ancho completo para elementos en tamaños intermedios */
     background-color: rgb(180, 255, 146);
   }
 }
-@media only screen and (max-width: 600px) {
+/* Estilos para pantallas más grandes, como computadoras de escritorio */
+@media (min-width: 1025px) {
   body {
-    background-color: lightblue;
+    background-color: #dcffd0;
   }
-}
-@media only screen and (max-width: 768px) {
+  /* Estilos para columnas en pantallas grandes */
   [class*=col-] {
-    width: 100%;
-    justify-content: center;
+    width: auto; /* Restauramos el ancho automático para columnas en pantallas grandes */
+    justify-content: flex-start; /* Ajustamos la alineación horizontal */
   }
 }
 .expand-button {
@@ -133,6 +133,30 @@ body {
   width: 200px;
   height: 150px;
   object-fit: cover;
+}
+
+.responsive-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+@media (max-width: 470px) {
+  .responsive-image {
+    max-width: 100%;
+    height: auto;
+  }
+}
+@media (min-width: 471px) and (max-width: 1024px) {
+  .responsive-image {
+    max-width: 100%;
+    height: auto;
+  }
+}
+@media (min-width: 1025px) {
+  .responsive-image {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 .navbar {

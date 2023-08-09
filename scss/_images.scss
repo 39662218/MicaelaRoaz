@@ -1,0 +1,22 @@
+.responsive-image {
+    display: block;
+    max-width: 100%; // Asegura que la imagen no sea más ancha que su contenedor
+    height: auto; // Permite que la altura se ajuste proporcionalmente a la anchura
+  
+    // Añade media queries para ajustar el tamaño de la imagen en diferentes dispositivos
+    @media (max-width: 470px) {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    @media (min-width: 471px) and (max-width: 1024px) {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    @media (min-width: 1025px) {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  
