@@ -19,7 +19,7 @@
 
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
           <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html"> Make My Food </a>
+            <a class="navbar-brand" href="../index.html"> MF </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -70,10 +70,10 @@
 
 
     <section>
-      <div class="expand-button" onclick="toggleExpansion('historia')">
+      <div class="expand-button" onclick="toggleExpansion('historia-1')">
         <h1> ACERCA DE NOSOTROS </h1>
       </div>
-      <div class="expanded-content" id="historia-content">
+      <div class="expanded-content" id="historia-1-content">
         <p>
         En lo profundo de un rincón especial, donde la solidaridad y la equidad florecen, se encuentra una cooperativa única en su esencia. Hace diez años, un grupo de personas con una visión compartida se unió para crear un modelo de negocio basado en la igualdad y el respeto mutuo. En el corazón de esta cooperativa se encuentra su directora, una líder apasionada y comprometida con los valores que definen su identidad.
 
@@ -83,6 +83,35 @@
       </p>
       </div>
     </section>
+
+
+    <section>
+      <div class="expand-button" onclick="toggleExpansion('historia-2')">
+        <h1> NUESTROS PRODUCTOS </h1>
+      </div>
+      <div class="expanded-content" id="historia-2-content">
+        <p>
+          Descubre nuestra selección de productos orgánicos, cultivados en el idílico pueblo de Rufino, en Santa Fe.\
+          En armonía con la naturaleza y libre de explotación de la tierra, nuestro compromiso es ofrecerte alimentos de la más alta calidad.
+          Cada cosecha se cultiva con el respeto y cuidado que merece nuestro entorno, sin agroquímicos dañinos. Del campo directo a tu mesa, disfruta de sabores auténticos y nutritivos que reflejan nuestro compromiso con un estilo de vida sostenible.
+      </div>
+    </section>
+
+    <section>
+      <div class="expand-button" onclick="toggleExpansion('historia-3')">
+        <h1> UNETE! </h1>
+      </div>
+      <div class="expanded-content" id="historia-3-content">
+        <p>
+          Únete a nuestro apasionante proyecto y sé parte del cambio.
+          Buscamos personas proactivas y comprometidas con la creación de un mundo mejor, que valoren el cuidado del medio ambiente y la sostenibilidad.
+          Si eres un apasionado defensor del cambio ambiental, te invitamos a sumarte a nuestra comunidad.
+          Llena el formulario que encontrarás a continuación y forma parte de un equipo dedicado a hacer del planeta un lugar más saludable y sostenible para todos. 
+         Tu participación es fundamental para construir un futuro más brillante.
+        </p>
+      </div>
+    </section>
+
 
 
  <nav>
@@ -102,14 +131,14 @@
  
   
 
-<footer>
+
   <section>
-      
+    
   <div class="contact_form">
 
     <div class="formulario">   
       \   
-      <h1>FORMULARIO DE DATOS</h1>
+      <h2>FORMULARIO DE DATOS</h2>
         <h3>Escríbenos y nos pondremos en contacto contigo</h3>
 
 
@@ -173,12 +202,31 @@
 
   </div>
 </section>
+
+
+<footer class="footer">
+  <div class="container">
+    <p>&copy; 2023 Tu Empresa. Todos los derechos reservados.</p>
+    <ul class="social-icons">
+      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+      <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+    </ul>
+  </div>
 </footer>
+
+
+
+
 <script>
   function toggleExpansion(contentId) {
   const content = document.getElementById(contentId + '-content');
   content.classList.toggle('expanded');
 }
 </script>
+
+
+<script src="mi-script.js"></script>
+
 </body>
 </html>

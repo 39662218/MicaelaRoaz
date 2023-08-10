@@ -1,0 +1,18 @@
+// Variables
+$navbar-font: "Aboreto"; // Cambio de fuentes
+
+
+
+// Estilos generales del navbar
+.navbar {
+  background-color: $navbar-color;
+  font-family: $navbar-font; 
+  /// color de letras del nav
+  .navbar-nav .nav-link {
+    color: #000000;
+
+    &.active {
+      color: #070202;
+    }
+  }
+}

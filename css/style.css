@@ -1,5 +1,7 @@
 @charset "UTF-8";
 /* Estilos para dispositivos pequeños (por ejemplo, teléfonos) */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Borel&display=swap");
 @media (max-width: 470px) {
   .miestilo {
     background-color: rgb(205, 255, 205); /* Asegúrate de definir $lightest-green */
@@ -124,10 +126,24 @@
   color: #070202;
 }
 
+.expanded-content {
+  display: none;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.expanded-content {
+  display: none; /* Oculta el contenido expandido por defecto */
+}
+
+.expanded {
+  display: block; /* Muestra el contenido cuando la clase 'expanded' está presente */
+}
+
 body {
-  background-color: rgb(96, 182, 108);
-  font-family: "Circular", Arial, sans-serif;
-  color: rgb(156, 252, 119);
+  background-color: #aadd9a;
+  font-family: "Borel", cursive;
+  color: rgb(205, 255, 205);
   box-sizing: border-box;
 }
 body header h1 {
@@ -172,8 +188,7 @@ body p strong {
 }
 body h2 {
   color: rgb(3, 39, 2);
-  font-family: "Aboreto";
-  font-style: normal;
+  font-family: "Borel", cursive;
   font-weight: 400;
 }
 body select {
@@ -182,7 +197,7 @@ body select {
   font-style: normal;
 }
 body div {
-  color: #62c971;
+  color: #96b99c;
 }
 
 body {
@@ -224,6 +239,7 @@ span {
 }
 
 .container-items .item {
+  background-color: #366b3a;
   max-width: 200px;
   margin: auto;
   border: 1px solid;
@@ -256,6 +272,7 @@ span {
   color: beige;
   padding: 5px 15px;
   border-radius: 5px;
+  background-color: #366b3a;
 }
 
 .container-items .item .name-item {

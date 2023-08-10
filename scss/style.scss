@@ -1,36 +1,21 @@
 
-
 @import 'colores';
 @import 'media-queries';
 @import 'bucles';
 @import 'images';
+@import 'nav';
+@import 'fuentes';
+@import 'tipografia';
 
-
-// Variables
-$navbar-font: "Aboreto"; // Cambio de fuentes
-
-
-
-// Estilos generales del navbar
-.navbar {
-  background-color: $navbar-color;
-  font-family: $navbar-font; 
-  /// color de letras del nav
-  .navbar-nav .nav-link {
-    color: #000000;
-
-    &.active {
-      color: #070202;
-    }
-  }
-}
 
 // Estilos generales del body
 body {
-  background-color: $main-green;
-  font-family: "Circular", Arial, sans-serif;
+  background-color: #aadd9a;
+ 
+    font-family: 'Borel', cursive;
+
   /// fondo pag 
-  color: rgb(156, 252, 119);
+  color: $lightest-green;
   box-sizing: border-box;
 
   // Estilos del header
@@ -89,8 +74,8 @@ body {
   // Estilos de encabezados h2
   h2 {
     color: $dark-green;
-    font-family: 'Aboreto';
-    font-style: normal;
+    font-family: 'Borel', cursive;
+    
     font-weight: 400;
   }
 
@@ -105,7 +90,7 @@ body {
 
   // Estilos generales de divs
   div {
-    color: #62c971;
+    color: #96b99c;
   }
 }
  
@@ -131,6 +116,7 @@ span {
 }
 
 .container {
+ 
   max-width: 1200px;
   padding: 10px;
   margin: auto;
@@ -151,6 +137,7 @@ span {
 }
 
 .container-items .item {
+  background-color: $main-green-2;
   max-width: 200px;
   margin: auto;
   border: 1px solid;
@@ -158,6 +145,7 @@ span {
   padding: 20px;
   transition: 0.3s;
 }
+
 
 .container-items .item:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -183,6 +171,7 @@ span {
   color: beige;
   padding: 5px 15px;
   border-radius: 5px;
+  background-color:$main-green-2 ;
 }
 
 .container-items .item .name-item {
@@ -190,4 +179,12 @@ span {
   text-align: center;
   font-weight: 22px;
 }
+
+
+
+
+///footer////
+
+
+
 
