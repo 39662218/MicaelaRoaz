@@ -1,6 +1,5 @@
 @charset "UTF-8";
 /* Estilos para dispositivos pequeños (por ejemplo, teléfonos) */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 @media (max-width: 470px) {
   .miestilo {
     background-color: rgb(205, 255, 205); /* Asegúrate de definir $lightest-green */
@@ -27,50 +26,6 @@
     justify-content: flex-start; /* Ajustamos la alineación horizontal */
   }
 }
-.expand-button {
-  padding: 10px;
-  background-color: #83ff72;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  position: relative;
-}
-
-/* Estilos para el contenido expandido */
-.expanded-content {
-  display: none;
-  background-color: #8eca7c;
-  color: rgb(3, 39, 2);
-  padding: 10px;
-  border-radius: 5px;
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  transition: opacity 0.3s ease; /* Agregar transición de opacidad */
-}
-
-.expanded {
-  display: table-row;
-  opacity: 1; /* Mostrar contenido */
-}
-
-.expanded-content {
-  /* ... Tus otros estilos ... */
-  display: none;
-}
-
-.expanded {
-  display: block;
-  opacity: 1;
-}
-
-.expand-container {
-  margin-bottom: 20px; /* Ajusta el espacio entre los contenedores */
-}
-
 .col-1 {
   width: 8.3333333333%;
 }
@@ -119,22 +74,6 @@
   width: 100%;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-}
-
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-.gallery img {
-  width: 200px;
-  height: 150px;
-  object-fit: cover;
-}
-
 .responsive-image {
   display: block;
   max-width: 100%;
@@ -159,36 +98,21 @@ body {
   }
 }
 
-.container {
+.image-slider {
   display: flex;
-  flex-direction: column; /* Cambia la dirección de los elementos a columna */
-  align-items: center; /* Centra los elementos horizontalmente */
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
 }
-
-.product-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Crea columnas flexibles */
-  gap: 20px;
+.image-slider .slide {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+  overflow: hidden;
 }
-
-.product-item {
-  display: flex;
-  justify-content: center;
-}
-
-.product {
-  text-align: center;
-}
-
-.product img {
-  max-width: 100%;
+.image-slider .slide img {
+  width: 33%;
   height: auto;
 }
 
-/* Ajusta los estilos de los títulos y botones según tus necesidades */
 .navbar {
   background-color: #a2ff9f;
   font-family: "Aboreto";
@@ -252,20 +176,6 @@ body h2 {
   font-style: normal;
   font-weight: 400;
 }
-body button {
-  height: auto;
-  padding-left: 5px;
-  padding-right: 5px;
-  margin-bottom: 20px;
-  margin-top: 10px;
-  text-transform: uppercase;
-  background-color: #8eca7c;
-  border-color: #83ff6b;
-  border-style: solid;
-  border-radius: 10px;
-  width: 420px;
-  cursor: pointer;
-}
 body select {
   color: #8eca7c;
   font-family: "monaco,georgia";
@@ -287,6 +197,71 @@ h1, h2, h3 {
 p {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
+}
+
+span {
+  color: rgb(3, 39, 2);
+}
+
+.container {
+  max-width: 1200px;
+  padding: 10px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container-items {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-gap: 30px;
+  grid-row-gap: 30px;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.container-items .item {
+  max-width: 200px;
+  margin: auto;
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 20px;
+  transition: 0.3s;
+}
+
+.container-items .item:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+}
+
+.container-items .item .img-item {
+  max-width: 100%;
+}
+
+.container-items .item .titulo-item {
+  display: block;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.container-items .item .button-item {
+  display: block;
+  margin: 10px auto;
+  border: none;
+  background: #70b878;
+  color: beige;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+.container-items .item .name-item {
+  display: block;
+  text-align: center;
+  font-weight: 22px;
 }
 
 /*# sourceMappingURL=style.css.map */
