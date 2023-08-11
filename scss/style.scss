@@ -45,7 +45,7 @@ body {
     }
 
     article {
-      background-color: $lighter-green;
+      background-color: $article-green;
       width: auto;
       height: auto;
 
@@ -90,7 +90,7 @@ body {
 
   // Estilos generales de divs
   div {
-    color: #96b99c;
+    color: #68c578;
   }
 }
  
@@ -182,9 +182,52 @@ span {
 
 
 
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-///footer////
+  position:   end;
+  background-color: rgb(111, 129, 115);
+}
+
+////footer
+/// 
+
+.footercontacto{
+margin-top: 30%;
+}
+
+.logofacebook{
+width: 60px;
+padding: 5%;
+
+}
+
+.logowhatsapp{
+width: 60px;
+padding: 7%;
+}
+
+.logoinstagram{
+width: 60px;
+padding: 7%;
+}
 
 
+
+////video
+/// 
+.video-container {
+  position: center;
+  max-width: 1700px; /* Establece el ancho máximo deseado */
+  width: 1200%;
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+
+.video-container video {
+  width: 100%;
+  height: auto; /* Permite que la altura se ajuste automáticamente según la proporción */
+}
 
 

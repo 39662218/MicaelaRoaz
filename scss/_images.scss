@@ -1,9 +1,9 @@
 .responsive-image {
-    display: block;
-    max-width: 100%; // Asegura que la imagen no sea más ancha que su contenedor
-    height: auto; // Permite que la altura se ajuste proporcionalmente a la anchura
+    display: flex;
+    max-width: auto; //  la imagen no sea más ancha que su contenedor
+    height: auto; // la altura se ajusta proporcionalmente a la anchura
   
-    // Añade media queries para ajustar el tamaño de la imagen en diferentes dispositivos
+    //  media queries para ajustar el tamaño de la imagen en diferentes dispositivos
     @media (max-width: 470px) {
       max-width: 100%;
       height: auto;
@@ -37,5 +37,36 @@
       }
     }
   }
+ 
+  /* Estilos base para la imagen */
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+}
 
-  
+/* Media query para dispositivos pequeños (por ejemplo, smartphones) */
+@media (max-width: 768px) {
+  .img-responsive {
+    /* Ajusta el tamaño de la imagen para dispositivos pequeños */
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Media query para dispositivos medianos (por ejemplo, tablets) */
+@media (min-width: 769px) and (max-width: 992px) {
+  .img-responsive {
+    /* Ajusta el tamaño de la imagen para dispositivos medianos */
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Media query para dispositivos grandes (por ejemplo, pantallas de escritorio) */
+@media (min-width: 993px) {
+  .img-responsive {
+    /* Ajusta el tamaño de la imagen para dispositivos grandes */
+    max-width: 100%;
+    height: auto;
+  }
+}

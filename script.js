@@ -21,3 +21,8 @@ function toggleExpansion(contentId) {
     const content = document.getElementById(contentId + '-content');
     content.classList.toggle('expanded');
   }
+
+
+
+/////codig carrusel fotos...////
+

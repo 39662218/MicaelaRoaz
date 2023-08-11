@@ -1,31 +1,31 @@
 @charset "UTF-8";
-/* Estilos para dispositivos pequeños (por ejemplo, teléfonos) */
+/* phone */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Borel&display=swap");
 @media (max-width: 470px) {
   .miestilo {
-    background-color: rgb(205, 255, 205); /* Asegúrate de definir $lightest-green */
+    background-color: rgb(205, 255, 205);
   }
   body {
-    background-color: lightblue; /* Agregamos un fondo de cuerpo para dispositivos pequeños */
+    background-color: rgb(178, 255, 185); /* Agregamos un fondo de cuerpo para dispositivos pequeños */
   }
 }
-/* Estilos para tabletas y pantallas de computadoras portátiles */
-@media (min-width: 471px) and (max-width: 1024px) {
+/* Estilos para tablet */
+@media (min-width: 600px) and (max-width: 1024px) {
   .element {
-    width: 100%; /* Ancho completo para elementos en tamaños intermedios */
+    width: 100%;
     background-color: rgb(180, 255, 146);
   }
 }
-/* Estilos para pantallas más grandes, como computadoras de escritorio */
+/*  pantallas más grandes */
 @media (min-width: 1025px) {
   body {
     background-color: #dcffd0;
   }
   /* Estilos para columnas en pantallas grandes */
   [class*=col-] {
-    width: auto; /* Restauramos el ancho automático para columnas en pantallas grandes */
-    justify-content: flex-start; /* Ajustamos la alineación horizontal */
+    width: auto;
+    justify-content: flex-start;
   }
 }
 .col-1 {
@@ -77,8 +77,8 @@
 }
 
 .responsive-image {
-  display: block;
-  max-width: 100%;
+  display: flex;
+  max-width: auto;
   height: auto;
 }
 @media (max-width: 470px) {
@@ -115,6 +115,36 @@
   height: auto;
 }
 
+/* Estilos base para la imagen */
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Media query para dispositivos pequeños (por ejemplo, smartphones) */
+@media (max-width: 768px) {
+  .img-responsive {
+    /* Ajusta el tamaño de la imagen para dispositivos pequeños */
+    max-width: 100%;
+    height: auto;
+  }
+}
+/* Media query para dispositivos medianos (por ejemplo, tablets) */
+@media (min-width: 769px) and (max-width: 992px) {
+  .img-responsive {
+    /* Ajusta el tamaño de la imagen para dispositivos medianos */
+    max-width: 100%;
+    height: auto;
+  }
+}
+/* Media query para dispositivos grandes (por ejemplo, pantallas de escritorio) */
+@media (min-width: 993px) {
+  .img-responsive {
+    /* Ajusta el tamaño de la imagen para dispositivos grandes */
+    max-width: 100%;
+    height: auto;
+  }
+}
 .navbar {
   background-color: #a2ff9f;
   font-family: "Aboreto";
@@ -167,7 +197,7 @@ body section.miestilo {
   }
 }
 body section article {
-  background-color: rgb(53, 136, 64);
+  background-color: #caf0ba;
   width: auto;
   height: auto;
 }
@@ -197,7 +227,7 @@ body select {
   font-style: normal;
 }
 body div {
-  color: #96b99c;
+  color: #68c578;
 }
 
 body {
@@ -279,6 +309,45 @@ span {
   display: block;
   text-align: center;
   font-weight: 22px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: end;
+  background-color: rgb(111, 129, 115);
+}
+
+.footercontacto {
+  margin-top: 30%;
+}
+
+.logofacebook {
+  width: 60px;
+  padding: 5%;
+}
+
+.logowhatsapp {
+  width: 60px;
+  padding: 7%;
+}
+
+.logoinstagram {
+  width: 60px;
+  padding: 7%;
+}
+
+.video-container {
+  position: center;
+  max-width: 1700px; /* Establece el ancho máximo deseado */
+  width: 1200%;
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+
+.video-container video {
+  width: 100%;
+  height: auto; /* Permite que la altura se ajuste automáticamente según la proporción */
 }
 
 /*# sourceMappingURL=style.css.map */
