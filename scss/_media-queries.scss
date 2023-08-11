@@ -1,32 +1,31 @@
-/* Estilos para dispositivos pequeños (por ejemplo, teléfonos) */
+/* phone */
 @media (max-width: 470px) {
   .miestilo {
-    background-color: $lightest-green; /* Asegúrate de definir $lightest-green */
+    background-color: $lightest-green;
   }
   body {
-    background-color: lightblue; /* Agregamos un fondo de cuerpo para dispositivos pequeños */
+    background-color: rgb(178, 255, 185); /* Agregamos un fondo de cuerpo para dispositivos pequeños */
   }
 }
 
-/* Estilos para tabletas y pantallas de computadoras portátiles */
-@media (min-width: 471px) and (max-width: 1024px) {
+/* Estilos para tablet */
+@media (min-width: 600px) and (max-width: 1024px) {
   .element {
-      width: 100%; /* Ancho completo para elementos en tamaños intermedios */
+      width: 100%; 
       background-color: rgb(180, 255, 146);
   }
 }
 
-/* Estilos para pantallas más grandes, como computadoras de escritorio */
+/*  pantallas más grandes */
 @media (min-width: 1025px) {
   body {
       background-color: #dcffd0;
   }
   /* Estilos para columnas en pantallas grandes */
   [class*="col-"] {
-      width: auto; /* Restauramos el ancho automático para columnas en pantallas grandes */
-      justify-content: flex-start; /* Ajustamos la alineación horizontal */
+      width: auto;
+      justify-content: flex-start;
   }
-
 
   
 }
