@@ -25,4 +25,5 @@ function toggleExpansion(contentId) {
 
 
 /////codig carrusel fotos...////
-
+var myCarousel = document.querySelector('#myCarousel')
+var carousel = new bootstrap.Carousel(myCarousel)
