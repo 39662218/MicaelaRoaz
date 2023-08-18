@@ -1,0 +1,92 @@
+///// carrrusel imagenes ///
+$carousel-control-color:             $main-green;
+$carousel-control-width:             15%;
+$carousel-control-opacity:           .5;
+$carousel-control-hover-opacity:     .9;
+$carousel-control-transition:        opacity .8s ease;
+
+$carousel-indicator-width:           10px;
+$carousel-indicator-height:          3px;
+$carousel-indicator-hit-area-height: 10px;
+$carousel-indicator-spacer:          3px;
+$carousel-indicator-opacity:         .5;
+$carousel-indicator-active-bg:       $main-green;
+$carousel-indicator-active-opacity:  1;
+$carousel-indicator-transition:      opacity .6s ease;
+
+$carousel-caption-width:             55%;
+$carousel-caption-color:             $main-green;
+$carousel-caption-padding-y:         1.25rem;
+$carousel-caption-spacer:            1.25rem;
+
+$carousel-control-icon-width:        2rem;
+
+$carousel-control-prev-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$carousel-control-color}'><path d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/></svg>");
+$carousel-control-next-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$carousel-control-color}'><path d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/></svg>");
+
+$carousel-transition-duration:       .3s;
+$carousel-transition:                transform $carousel-transition-duration ease-in-out; // Define transform transition first if using multiple transitions (e.g., `transform 2s ease, opacity .5s ease-out`)
+
+$carousel-dark-indicator-active-bg:  $black;
+$carousel-dark-caption-color:        $black;
+$carousel-dark-control-icon-filter:  invert(1) grayscale(100);
+
+.carousel-item img {
+  max-width: auto; // Asegura que la imagen no exceda el tamaño del contenedor
+  height: auto;    // Mantiene la proporción de aspecto original
+}
+
+// Reducir el tamaño de los íconos de control
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-size: 2rem 2rem; // Ajusta el tamaño de los íconos a 2rem x 2rem
+}
+
+.carousel {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+
+.carousel-item {
+  flex: 0 0 auto; /* Tamaño automático */
+}
+
+.carousel-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Aplica media queries para ajustar estilos en diferentes tamaños de pantalla */
+@media (max-width: 768px) {
+  .carousel {
+    flex-direction: column;
+  }
+}
+
+
+.recipe-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+  transition: height 0.3s ease-in-out;
+  
+  img {
+    max-width: 100%;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  &:hover {
+    height: 300px; /* Altura expandida */
+    
+    img {
+      transform: translateY(-100%);
+    }
+  }
+}
