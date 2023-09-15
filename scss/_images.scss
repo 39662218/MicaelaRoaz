@@ -1,7 +1,7 @@
 .responsive-image {
     display: flex;
-    max-width: auto; //  la imagen no sea más ancha que su contenedor
-    height: auto; // la altura se ajusta proporcionalmente a la anchura
+    max-width: 100%; //  la imagen no sea más ancha que su contenedor
+    height: 100%; // la altura se ajusta proporcionalmente a la anchura
   
     //  media queries para ajustar el tamaño de la imagen en diferentes dispositivos
     @media (max-width: 470px) {
@@ -71,5 +71,18 @@
   }
 }
 
+//// imagen banner
+.banner {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
 
-
+/* Estilo para hacer que la imagen sea responsive */
+.responsive-image {
+  width: 100%;
+  height: auto;
+}
