@@ -185,6 +185,26 @@
   display: block; /* Muestra el contenido cuando la clase 'expanded' está presente */
 }
 
+/* Estilos para el contenedor de la sección */
+.container {
+  text-align: center; /* Centra el contenido horizontalmente */
+  margin-bottom: 20px; /* Espacio inferior para separar las secciones */
+}
+
+/* Estilos para el título de la sección */
+.section-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px; /* Espacio inferior para separar el título de los elementos */
+}
+
+.section-title h2 {
+  font-size: 28px; /* Tamaño de fuente más grande */
+  color: #333; /* Color de texto (ajusta el color según tu preferencia) */
+}
+
+/* Estilos para el contenedor de elementos */
 .carousel-item img {
   max-width: auto;
   height: auto;
@@ -246,7 +266,7 @@ body {
   box-sizing: border-box;
 }
 body header h1 {
-  color: rgb(184, 127, 216);
+  color: #a27ad6;
   font-family: "Aboreto";
   font-style: normal;
   font-weight: 400;
@@ -296,7 +316,7 @@ body select {
   font-style: normal;
 }
 body div {
-  color: #68c578;
+  color: #df73d9;
 }
 
 body {
@@ -338,7 +358,7 @@ span {
 }
 
 .container-items .item {
-  background-color: #366b3a;
+  background-color: #431c70;
   max-width: 200px;
   margin: auto;
   border: 1px solid;
@@ -367,11 +387,11 @@ span {
   display: block;
   margin: 10px auto;
   border: none;
-  background: #70b878;
-  color: beige;
+  background: #4b197a;
+  color: #a27ad6;
   padding: 5px 15px;
   border-radius: 5px;
-  background-color: #366b3a;
+  background-color: #794ba5;
 }
 
 .container-items .item .name-item {

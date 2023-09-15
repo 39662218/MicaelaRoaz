@@ -22,7 +22,7 @@ body {
   // Estilos del header
   header {
     h1 {
-      color: $dark-green;
+      color: $main-green ;
       font-family: 'Aboreto';
       font-style: normal;
       font-weight: 400;
@@ -91,7 +91,7 @@ body {
 
   // Estilos generales de divs
   div {
-    color: #68c578;
+    color: #df73d9;
   }
 }
  
@@ -168,11 +168,11 @@ span {
   display: block;
   margin: 10px auto;
   border: none;
-  background: #70b878;
-  color: beige;
+  background: #4b197a;
+  color: $main-green;
   padding: 5px 15px;
   border-radius: 5px;
-  background-color:$main-green-2 ;
+  background-color: #794ba5;
 }
 
 .container-items .item .name-item {
