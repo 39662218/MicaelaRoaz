@@ -1,5 +1,16 @@
 // Variables
-$navbar-font: "Aboreto"; // Cambio de fuentes
+
+
+.navbar.navbar-custom {
+  background-color: black;
+}
+
+$navbar-font: 'Press Start 2P', cursive;
+
+.navbar {
+  font-family: 'Press Start 2P', cursive;
+  text-shadow: 1px 1px 0px #6403d3, -1px -1px 0px #f7f2ff;
+}
 
 
 
@@ -9,10 +20,29 @@ $navbar-font: "Aboreto"; // Cambio de fuentes
   font-family: $navbar-font; 
   /// color de letras del nav
   .navbar-nav .nav-link {
-    color: #000000;
+    color: #ffffff; ///cambia el color de las pages visto desde nav bar///
 
     &.active {
-      color: #070202;
+      color: #f0e8fd;  ////cambia el color de px////
     }
   }
+}
+
+/* Cambiar el color del texto en el elemento .navbar-brand a rojo */
+.navbar-brand {
+  color: rgb(75, 6, 102);
+}
+
+.navbar {
+  background-color: black;
+  /* Otros estilos de la barra de navegación aquí */
+}
+
+/* Cambiar el color del texto de los enlaces en la barra de navegación (si es necesario) */
+.navbar-nav .nav-link {
+  color:#f1e9ff
+}
+
+.navbar.navbar-custom {
+  background-color: black !important;
 }

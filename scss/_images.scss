@@ -21,21 +21,30 @@
   }
   
 
+ 
+
+ 
+  
+  .slide img {
+    max-width: auto;
+    height: auto;
+  }
+
   .image-slider {
     display: flex;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
-    
-    .slide {
-      flex: 0 0 100%;
-      scroll-snap-align: start;
-      overflow: hidden;
-      
-      img {
-        width: 33%;
-        height: auto;
-      }
-    }
+  }
+  
+  .slide {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    overflow: hidden;
+  }
+  
+  .slide img {
+    max-width: 80%; /* Puedes ajustar este valor según tus preferencias */
+    height: auto;
   }
  
   /* Estilos base para la imagen */
@@ -85,4 +94,43 @@
 .responsive-image {
   width: 100%;
   height: auto;
+}
+
+
+//// CARROUSEL SLIDER
+/// 
+/* Estilos para el contenedor del slider */
+#carouselExampleControls {
+  max-width: 800px; /* Define un ancho máximo para el contenedor del slider */
+  margin: 400%; /* Centra el slider en la página */
+}
+
+/* Estilos para las imágenes dentro del slider */
+.carousel-inner img {
+  max-width: 100%; /* Haz que las imágenes se ajusten al ancho del contenedor */
+  height: auto; /* Mantiene la proporción de aspecto original */
+}
+
+/* Estilos para los controles del slider */
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: rgba(130, 37, 173, 0.521); /* Agrega un fondo semitransparente a los controles */
+  width: 40px; /* Define el ancho de los controles */
+  height: 40px; /* Define la altura de los controles */
+  border-radius: 50%; /* Hace que los controles sean redondos */
+  top: 50%; /* Coloca los controles en el centro verticalmente */
+  transform: translateY(-50%); /* Centra verticalmente los controles */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  font-size: 24px; /* Define el tamaño de las flechas */
+  color: white; /* Define el color de las flechas */
+}
+
+/* Estilos para hacer el slider más pequeño en pantallas pequeñas */
+@media (max-width: 768px) {
+  #carouselExampleControls {
+    max-width: 300px; /* Reduzca el ancho máximo del contenedor en pantallas pequeñas */
+  }
 }

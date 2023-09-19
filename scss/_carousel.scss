@@ -32,7 +32,7 @@ $carousel-dark-caption-color:        $black;
 $carousel-dark-control-icon-filter:  invert(1) grayscale(100);
 
 .carousel-item img {
-  max-width: auto; // Asegura que la imagen no exceda el tamaño del contenedor
+  max-width: 100px; // Asegura que la imagen no exceda el tamaño del contenedor
   height: auto;    // Mantiene la proporción de aspecto original
 }
 

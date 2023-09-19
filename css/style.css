@@ -2,6 +2,8 @@
 /* phone */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Borel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 @media (max-width: 470px) {
   .miestilo {
     background-color: rgb(205, 255, 205);
@@ -100,18 +102,25 @@
   }
 }
 
+.slide img {
+  max-width: 100PX;
+  height: auto;
+}
+
 .image-slider {
   display: flex;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
 }
-.image-slider .slide {
+
+.slide {
   flex: 0 0 100%;
   scroll-snap-align: start;
   overflow: hidden;
 }
-.image-slider .slide img {
-  width: 33%;
+
+.slide img {
+  max-width: 100%;
   height: auto;
 }
 
@@ -160,15 +169,78 @@
   height: auto;
 }
 
+/* Estilos para el contenedor del slider */
+#carouselExampleControls {
+  max-width: 800px; /* Define un ancho máximo para el contenedor del slider */
+  margin: auto; /* Centra el slider en la página */
+}
+
+/* Estilos para las imágenes dentro del slider */
+.carousel-inner img {
+  max-width: 100%; /* Haz que las imágenes se ajusten al ancho del contenedor */
+  height: auto; /* Mantiene la proporción de aspecto original */
+}
+
+/* Estilos para los controles del slider */
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: rgba(130, 37, 173, 0.521); /* Agrega un fondo semitransparente a los controles */
+  width: 40px; /* Define el ancho de los controles */
+  height: 40px; /* Define la altura de los controles */
+  border-radius: 50%; /* Hace que los controles sean redondos */
+  top: 50%; /* Coloca los controles en el centro verticalmente */
+  transform: translateY(-50%); /* Centra verticalmente los controles */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  font-size: 24px; /* Define el tamaño de las flechas */
+  color: white; /* Define el color de las flechas */
+}
+
+/* Estilos para hacer el slider más pequeño en pantallas pequeñas */
+@media (max-width: 768px) {
+  #carouselExampleControls {
+    max-width: 300px; /* Reduzca el ancho máximo del contenedor en pantallas pequeñas */
+  }
+}
+.navbar.navbar-custom {
+  background-color: black;
+}
+
 .navbar {
-  background-color: #a2ff9f;
-  font-family: "Aboreto";
+  font-family: "Press Start 2P", cursive;
+  text-shadow: 1px 1px 0px #6403d3, -1px -1px 0px #f7f2ff;
+}
+
+.navbar {
+  background-color: #6e068d;
+  font-family: "Press Start 2P", cursive;
 }
 .navbar .navbar-nav .nav-link {
-  color: #000000;
+  color: #ffffff;
 }
 .navbar .navbar-nav .nav-link.active {
-  color: #070202;
+  color: #f0e8fd;
+}
+
+/* Cambiar el color del texto en el elemento .navbar-brand a rojo */
+.navbar-brand {
+  color: rgb(75, 6, 102);
+}
+
+.navbar {
+  background-color: black;
+  /* Otros estilos de la barra de navegación aquí */
+}
+
+/* Cambiar el color del texto de los enlaces en la barra de navegación (si es necesario) */
+.navbar-nav .nav-link {
+  color: #f1e9ff;
+}
+
+.navbar.navbar-custom {
+  background-color: black !important;
 }
 
 .expanded-content {
@@ -206,7 +278,7 @@
 
 /* Estilos para el contenedor de elementos */
 .carousel-item img {
-  max-width: auto;
+  max-width: 100px;
   height: auto;
 }
 
@@ -261,15 +333,22 @@
 
 body {
   background-color: #15021d;
-  font-family: "Borel", cursive;
+  font-family: "Press Start 2P", cursive;
   color: rgb(205, 255, 205);
   box-sizing: border-box;
 }
 body header h1 {
   color: #a27ad6;
-  font-family: "Aboreto";
+  font-family: "Press Start 2P", cursive;
   font-style: normal;
   font-weight: 400;
+}
+body h1 {
+  font-family: "Press Start 2P", cursive;
+}
+body h1 .section-title h1 {
+  display: block;
+  text-align: center; /* Centra el texto horizontalmente */
 }
 body section {
   color: rgb(184, 127, 216);
@@ -278,7 +357,7 @@ body section.article {
   color: #caf0ba;
 }
 body section.miestilo {
-  background-color: rgb(53, 136, 64);
+  background-color: rgb(137, 76, 207);
 }
 @media (max-width: 480px) {
   body section.miestilo {
@@ -323,7 +402,7 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-h1, h2, h3 {
+h2, h3 {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
 }
@@ -425,18 +504,6 @@ footer {
 .logoinstagram {
   width: 60px;
   padding: 7%;
-}
-
-.video-container {
-  position: center;
-  max-width: 1700px; /* Establece el ancho máximo deseado */
-  width: 1200%;
-  margin: 0 auto; /* Centra el contenedor horizontalmente */
-}
-
-.video-container video {
-  width: 100%;
-  height: auto; /* Permite que la altura se ajuste automáticamente según la proporción */
 }
 
 /*# sourceMappingURL=style.css.map */

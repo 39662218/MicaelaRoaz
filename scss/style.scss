@@ -8,12 +8,11 @@
 @import 'tipografia';
 @import 'carousel';
 
-
 // Estilos generales del body
 body {
   background-color: #15021d;
  
-    font-family: 'Borel', cursive;
+    font-family:  'Press Start 2P', cursive;
 
   /// fondo pag 
   color: $lightest-green;
@@ -23,11 +22,25 @@ body {
   header {
     h1 {
       color: $main-green ;
-      font-family: 'Aboreto';
+      font-family: 'Press Start 2P', cursive;
       font-style: normal;
       font-weight: 400;
     }
   }
+ 
+
+  h1 {
+
+    font-family: 'Press Start 2P', cursive ;
+    .section-title h1 {
+     display: block;
+    text-align: center; /* Centra el texto horizontalmente */
+   
+    }
+
+  }
+
+
 
   // Estilos de las secciones
   section {
@@ -102,7 +115,7 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-h1, h2, h3 {
+h2, h3 {
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
 }
@@ -215,20 +228,5 @@ width: 60px;
 padding: 7%;
 }
 
-
-
-////video
-/// 
-.video-container {
-  position: center;
-  max-width: 1700px; /* Establece el ancho máximo deseado */
-  width: 1200%;
-  margin: 0 auto; /* Centra el contenedor horizontalmente */
-}
-
-.video-container video {
-  width: 100%;
-  height: auto; /* Permite que la altura se ajuste automáticamente según la proporción */
-}
 
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,31 +7,53 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css"> 
     <link rel="shortcut icon" href="./images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-REKNi4jiiMXpYsXlLarTE2/1P7vQWw6pdLOMzNA6k3Be6vBxEG4FIzmD2QXvZ0MUe4F7fV8Blv2pwcCt5PfBfA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js" defer></script>
     <title> PIXIES </title>
-</head>  
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+
+
 
 <body>
    
   
    <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"> PIXIES </a>
+        <a class="navbar-brand" href="./index.html">
+          <img src="./images/iconnavbar.png" alt="Ícono o logotipo">
+        </a>
+        
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="./pages/aboutuss.html"> ACERCA DE NOSOTROS </a>
+            <a class="nav-link active" aria-current="page" href="./index.html"> PX </a>
             <a class="nav-link" href="./pages/gorras.html"> GORRAS </a>
             <a class="nav-link" href="./pages/remeras.html"> REMERAS </a>
             <a class="nav-link" href="./pages/totebags.html"> TOTEBAGS </a>
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
           </div>
         </div>
+        <form class="form-inline my-2 my-lg-0"  action="search-results.html" method="GET">
+            <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            <i class="fas fa-search"></i> <!-- Icono de lupa -->
+          </button>
+        </form>
+
+     
+        <div id="search-results">
+          <!-- Aquí se mostrarán los resultados de la búsqueda -->
+      </div>
       </div>
     </nav>
    
-  
+   
    
 
    
@@ -52,13 +74,16 @@
 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="images/productossecos/masterclass1pagina.png" class="d-block w-100" alt="masterclascarrousel">
+      <img src="images/imagesdeslizantes/imagendes1.png" class="d-block " alt="masterclascarrousel">
     </div>
     <div class="carousel-item">
-      <img src="images/productossecos/masterclas2pagina.png" class="d-block w-100" alt="masterclascarrousel">
+      <img src="images/imagesdeslizantes/imagesdes2.png" class="d-block " alt="masterclascarrousel">
     </div>
     <div class="carousel-item">
-      <img src="images/productossecos/masterclas3pagina.png" class="d-block w-100" alt="masterclascarrousel">
+      <img src="images/imagesdeslizantes/imagendes3.png" class="d-block " alt="masterclascarrousel">
+    </div>
+    <div class="carousel-item">
+      <img src="images/imagesdeslizantes/imagesdes4.png" class="d-block " alt="masterclascarrousel">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -73,7 +98,169 @@
       
    
 
+<main>
+  <section>
+    <div class="expand-button" onclick="toggleExpansion('historia')">
+      <h1>NUESTRA HISTORIA</h1>
+    </div>
+    <div class="expanded-content" id="historia-content">
+    <p>
+       Esta historia de cultivo sostenible y amor por la madre naturaleza comenzó hace varias décadas, cuando un grupo de visionarios decidió que había una manera más armoniosa de cultivar y alimentar al mundo.
 
+      En lugar de explotar la tierra y agotar sus recursos, esta cooperativa de soñadores optó por abrazar prácticas agrícolas respetuosas con el medio ambiente. Descubrieron los secretos del cultivo orgánico, donde la tierra es tratada como un tesoro, y en cada surco se siembra la semilla de un futuro más prometedor.
+
+      La huerta orgánica se convirtió en un refugio de biodiversidad, donde las mariposas revolotean, las abejas zumban y las aves anidan entre los cultivos. La armonía entre las diferentes especies y la tierra fértil nutren el ecosistema en su totalidad, brindando un espectáculo de vida en cada rincón.
+
+      Con un enfoque en la sostenibilidad y la responsabilidad con el planeta, esta cooperativa adoptó prácticas de conservación del agua y el suelo. Implementaron sistemas de riego eficientes y diseñaron métodos para reutilizar recursos naturales, reduciendo así su huella ambiental.
+
+     El compromiso de la cooperativa con la autogestión es un pilar fundamental en su historia. Aquí, cada miembro es una pieza esencial del rompecabezas. Las decisiones se toman colectivamente, y el conocimiento y las habilidades de cada persona son valorados y compartidos. Juntos, trabajan con pasión y dedicación para hacer florecer la tierra y cosechar los frutos de su esfuerzo.
+
+     Cada mañana, los agricultores se despiertan con gratitud en el corazón y una visión clara: llevar al mundo alimentos frescos y nutritivos. Desde las jugosas hortalizas hasta las dulces frutas, cada producto de la huerta orgánica es un regalo de la tierra y el trabajo humano.
+
+     Los lazos con la comunidad son fuertes, ya que la cooperativa se enorgullece de compartir su conocimiento y sus productos con aquellos que buscan una conexión más profunda con la naturaleza y una alimentación consciente. Talleres educativos, visitas escolares y mercados locales son solo algunos de los medios para tejer estos lazos con la sociedad.
+
+    La historia de esta huerta orgánica es una inspiración para todos los que buscan un futuro más sostenible y respetuoso con la Tierra. Un recordatorio de que cuando trabajamos juntos en armonía con la naturaleza, podemos cosechar no solo alimentos frescos y deliciosos, sino también una comunidad fuerte y un planeta más saludable para las generaciones venideras.
+
+
+      </p>
+    </div>
+  </section>
+
+
+  <section>
+    <div class="expand-button" onclick="toggleExpansion('historia-1')">
+      <h1> ACERCA DE NOSOTROS </h1>
+    </div>
+    <div class="expanded-content" id="historia-1-content">
+      <p>
+      En lo profundo de un rincón especial, donde la solidaridad y la equidad florecen, se encuentra una cooperativa única en su esencia. Hace diez años, un grupo de personas con una visión compartida se unió para crear un modelo de negocio basado en la igualdad y el respeto mutuo. En el corazón de esta cooperativa se encuentra su directora, una líder apasionada y comprometida con los valores que definen su identidad.
+
+      En esta cooperativa, todos los miembros tienen una voz y un voto en la toma de decisiones. Cada empleado es valorado por sus habilidades y conocimientos únicos, y juntos, como una comunidad unida, forjan el camino hacia un futuro más prometedor. Aquí, no hay jerarquías rígidas ni barreras entre la dirección y el equipo, solo un espíritu colaborativo que fomenta el crecimiento individual y colectivo.
+      
+      La directora de la cooperativa es una inspiración para todos, ya que personifica los principios de liderazgo compartido y el empoderamiento de los demás. Su visión audaz y su enfoque inclusivo han allanado el camino para un entorno de trabajo donde cada idea es bienvenida y cada perspectiva es considerada.
+    </p>
+    </div>
+  </section>
+
+
+  <section>
+    <div class="expand-button" onclick="toggleExpansion('historia-2')">
+      <h1> NUESTROS PRODUCTOS </h1>
+    </div>
+    <div class="expanded-content" id="historia-2-content">
+      <p>
+        Descubre nuestra selección de productos orgánicos, cultivados en el idílico pueblo de Rufino, en Santa Fe.\
+        En armonía con la naturaleza y libre de explotación de la tierra, nuestro compromiso es ofrecerte alimentos de la más alta calidad.
+        Cada cosecha se cultiva con el respeto y cuidado que merece nuestro entorno, sin agroquímicos dañinos. Del campo directo a tu mesa, disfruta de sabores auténticos y nutritivos que reflejan nuestro compromiso con un estilo de vida sostenible.
+    </div>
+  </section>
+
+  <section>
+    <div class="expand-button" onclick="toggleExpansion('historia-3')">
+      <h1> UNETE! </h1>
+    </div>
+    <div class="expanded-content" id="historia-3-content">
+      <p>
+        Únete a nuestro apasionante proyecto y sé parte del cambio.
+        Buscamos personas proactivas y comprometidas con la creación de un mundo mejor, que valoren el cuidado del medio ambiente y la sostenibilidad.
+        Si eres un apasionado defensor del cambio ambiental, te invitamos a sumarte a nuestra comunidad.
+        Llena el formulario que encontrarás a continuación y forma parte de un equipo dedicado a hacer del planeta un lugar más saludable y sostenible para todos. 
+       Tu participación es fundamental para construir un futuro más brillante.
+      </p>
+    </div>
+  </section>
+
+
+
+<nav>
+  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7k3QVpiARhGze7Elp5HlkF?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section>
+  <article>
+  
+<div class="contact_form">
+
+  <div class="formulario">   
+    \   
+    <h2>FORMULARIO DE DATOS</h2>
+      <h3> Escríbenos si te gustaria trabajar con nosotros !</h3>
+
+
+        <form action="submeter-formulario.php" method="post">       
+
+          
+              <p>
+                <label for="nombre" class="colocar_nombre">Nombre
+                  <span class="obligatorio">*</span>
+                </label>
+                  <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+              </p>
+            
+              <p>
+                <label for="email" class="colocar_email">Email
+                  <span class="obligatorio">*</span>
+                </label>
+                  <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+              </p>
+          
+              <p>
+                <label for="telefone" class="colocar_telefono">Teléfono
+                </label>
+                  <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+              </p>    
+            
+              <p>
+                <label for="website" class="colocar_website">Sitio web
+                </label>
+                  <input type="url" name="introducir_website" id="website" placeholder="Escribe la URL de tu web">
+              </p>    
+            
+              <p>
+                <label for="asunto" class="colocar_asunto">Asunto
+                  <span class="obligatorio">*</span>
+                </label>
+                  <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+              </p>    
+            
+              <p>
+                <label for="mensaje" class="colocar_mensaje">Mensaje
+                  <span class="obligatorio">*</span>
+                </label>                     
+                                  <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                              </p>                    
+            
+              <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+
+              <p class="aviso">
+                <span class="obligatorio"> * </span>
+                <p> los campos son obligatorios.
+              </p>          
+          
+        </form>
+
+
+    
+
+
+ 
+
+</div>
+</article>
+</section>
 
 
 
@@ -106,12 +293,26 @@
      </p>
     </footer>
     
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.2/dist/js/bootstrap.bundle.min.js"></script>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
 
-  </body>
+    <script>
+
+        function toggleExpansion(contentId) {
+        const content = document.getElementById(contentId + '-content');
+       content.classList.toggle('expanded');
+    }
+
+
+
+    //// search ///
+  
+
+    </script>
+
+      
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
 </body>
 </html>
